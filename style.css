@@ -5,7 +5,7 @@ body {
   overflow: hidden; 
 
   /* 2. Set the background image */
-  background-image: url('your-image.jpg');
+  background-image: url('classroom_start.jpg');
 
   /* 3. Make it fill the screen without cropping */
   background-size: contain;      /* This shows the WHOLE image, but might leave bars on the side */
@@ -17,4 +17,17 @@ body {
   
   height: 100vh;                 /* Sets height to 100% of the viewport height */
   width: 100vw;                  /* Sets width to 100% of the viewport width */
+  color: white; /* This ensures your text stays readable on a dark background */
+  font-family: sans-serif;
+
 }
+
+    <style>
+        #fr-story-display {
+          background-color: lightblue;
+          color: black;
+          padding: 40px;
+          text-align: center;
+        }
+</style>
+
