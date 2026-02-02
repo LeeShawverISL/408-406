@@ -22,12 +22,9 @@ body {
 
 }
 
-    <style>
-        #fr-story-display {
-          background-color: lightblue;
-          color: black;
-          padding: 40px;
-          text-align: center;
-        }
-</style>
-
+fr-story-display {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
