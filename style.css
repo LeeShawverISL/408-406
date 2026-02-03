@@ -19,7 +19,7 @@ body {
 #fr-story-display {
     background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black box */
     color: white;
-    padding: 40px;
+    padding: 30px;
     text-align: center;
     border: 2px solid #27F5E4; /* Using one of your Cyan colors from B2 */
     border-radius: 10px;
