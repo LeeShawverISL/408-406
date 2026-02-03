@@ -17,13 +17,20 @@ body {
 }
 
 #fr-story-display {
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black box */
+    background-color: rgba(0, 0, 0, 0.8); 
     color: white;
-    padding: 30px;
+    
+    /* 1. SHAPE: Make it wider and less tall */
+    width: 80%;           /* Uses 80% of the screen width */
+    max-width: 900px;     /* Prevents it from getting TOO wide on big monitors */
+    padding: 20px 40px;   /* Smaller top/bottom padding (20px), larger side padding (40px) */
+
+    /* 2. POSITION: Move it lower */
+    margin-top: 200px;    /* Pushes the box down from the top */
+    
     text-align: center;
-    border: 2px solid #27F5E4; /* Using one of your Cyan colors from B2 */
+    border: 2px solid #27F5E4; 
     border-radius: 10px;
-    max-width: 600px;
 }
 
 #start-btn {
