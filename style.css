@@ -4,7 +4,8 @@ body {
     overflow: hidden; /* Prevents scrolling as we discussed */
     background-color: black; /* Starts black per your Idea #1 */
     background-image: url('classroom_start.jpg'); 
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: center;
     background-attachment: fixed;
     color: white;
