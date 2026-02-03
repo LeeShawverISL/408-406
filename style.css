@@ -1,49 +1,35 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevents scrolling as we discussed */
-    background-color: black; /* Starts black per your Idea #1 */
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    /* Background settings */
     background-image: url('classroom_start.jpg'); 
-    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    background-attachment: fixed;
-    color: white;
-    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-color: black;
+
+    /* FLEXBOX - This is the key to centering */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;      /* CENTER items horizontally */
+    justify-content: flex-start; /* Start from the top so we can push it down */
+    
+    /* This creates the "lower" position without breaking the center */
+    padding-top: 15vh;        /* This pushes the box down by 15% of the screen height */
 }
 
 #fr-story-display {
     background-color: rgba(0, 0, 0, 0.8); 
     color: white;
-    
-    /* 1. SHAPE: Make it wider and less tall */
-    width: 80%;           /* Uses 80% of the screen width */
-    max-width: 900px;     /* Prevents it from getting TOO wide on big monitors */
-    padding: 20px 40px;   /* Smaller top/bottom padding (20px), larger side padding (40px) */
-
-    /* 2. POSITION: Move it lower */
-    margin-top: 200px;    /* Pushes the box down from the top */
-    
+    width: 80%;           
+    max-width: 900px;     
+    padding: 30px;        
     text-align: center;
     border: 2px solid #27F5E4; 
     border-radius: 10px;
-}
-
-#start-btn {
-    background-color: #27F5E4;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-/* We use this class to hide elements until we need them */
-.hidden {
-    display: none;
+    box-shadow: 0 0 15px #27F5E4; /* Added that cool glow! */
 }
