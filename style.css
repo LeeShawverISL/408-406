@@ -3,6 +3,11 @@
     src: url('October_Crow.ttf') format('truetype'); 
 }
 
+@font-face {
+    font-family: 'DeadlySins';      
+    src: url('DeadlySins.ttf') format('truetype'); 
+}
+
 #fr-title {
     font-family: 'October_Crow', sans-serif; 
     font-size: 2rem;
@@ -28,6 +33,8 @@ body {
 }
 
 #fr-story-display {
+    font-family: 'DeadlySins', sans-serif; 
+    font-size: 1.5rem;    
     background-color: rgba(0, 0, 0, 0.85); 
     color: white;
     width: 85%;
