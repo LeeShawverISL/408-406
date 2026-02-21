@@ -19,6 +19,11 @@ body {
     justify-content: center; /* Centers items VERTICALLY */
 }
 
+#fr-title {
+    font-family: 'TitleFont';
+    src: url('October Crow.ttf'); 
+}
+
 #fr-story-display {
     /* 3. Box Shape */
     width: 85%;
@@ -26,6 +31,8 @@ body {
     padding: 30px;
     
     /* 4. Visuals */
+    font-family: 'StoryFont';
+    src: url('DeadlySins-Regular.ttf');
     background-color: rgba(0, 0, 0, 0.85); 
     color: white;
     text-align: center;
