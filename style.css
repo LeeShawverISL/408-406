@@ -5,31 +5,37 @@ body {
     width: 100vw;
     overflow: hidden;
 
-    /* Background settings */
+    /* 1. Background setup */
     background-image: url('classroom_start.jpg'); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
 
-    /* FLEXBOX - This is the key to centering */
+    /* 2. Flexbox Centering */
     display: flex;
-    flex-direction: column;  /* Stack items vertically */
-    align-items: center;      /* CENTER items horizontally */
-    justify-content: flex-start; /* Start from the top so we can push it down */
-    
-    /* This creates the "lower" position without breaking the center */
-    padding-top: 15vh;        /* This pushes the box down by 15% of the screen height */
+    flex-direction: column;  /* Stacks items vertically */
+    align-items: center;      /* Centers items HORIZONTALLY */
+    justify-content: center; /* Centers items VERTICALLY */
 }
 
 #fr-story-display {
-    background-color: rgba(0, 0, 0, 0.8); 
+    /* 3. Box Shape */
+    width: 85%;
+    max-width: 900px;
+    padding: 30px;
+    
+    /* 4. Visuals */
+    background-color: rgba(0, 0, 0, 0.85); 
     color: white;
-    width: 80%;           
-    max-width: 900px;     
-    padding: 30px;        
     text-align: center;
-    border: 2px solid #27F5E4; 
-    border-radius: 10px;
-    box-shadow: 0 0 15px #27F5E4; /* Added that cool glow! */
+    border: 3px solid #27F5E4; 
+    border-radius: 15px;
+    box-shadow: 0 0 20px #27F5E4;
+
+    /* 5. The Nudge: This moves it lower while STAYING centered */
+    transform: translateY(60px); 
+    
+    /* Remove any manual 'margin' properties if you have them! */
+    margin: 0; 
 }
