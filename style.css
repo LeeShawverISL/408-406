@@ -47,4 +47,10 @@ body {
     
     /* This moves it down while staying centered */
     transform: translateY(60px); 
+    margin-left: auto;   /* Pushes from the left */
+    margin-right: auto;  /* Pushes from the right */
+    
+    /* Ensure no old properties are fighting this */
+    left: 0; 
+    right: 0;
 }
