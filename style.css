@@ -5,8 +5,8 @@
 
 #fr-title {
     font-family: 'October_Crow', sans-serif; 
-    font-size: 2rem; /* Made it bigger to help you see if it works! */
-    color: #27F5E4;  /* Cyan-400 brand color to confirm the ID is active */
+    font-size: 2rem;
+    color: #27F5E4;
 }
 
 body {
