@@ -1,48 +1,43 @@
+@font-face {
+    font-family: 'October_Crow';      
+    src: url('October_Crow.ttf') format('truetype'); 
+}
+
+#fr-title {
+    font-family: 'October_Crow', sans-serif; 
+    font-size: 2rem; /* Made it bigger to help you see if it works! */
+    color: #27F5E4;  /* Cyan-400 brand color to confirm the ID is active */
+}
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
-
-    /* 1. Background setup */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    /* Horizontal Center */
+    justify-content: center; /* Vertical Center */
+    
     background-image: url('classroom_start.jpg'); 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
-
-    /* 2. Flexbox Centering */
-    display: flex;
-    flex-direction: column;  /* Stacks items vertically */
-    align-items: center;      /* Centers items HORIZONTALLY */
-    justify-content: center; /* Centers items VERTICALLY */
-}
-
-#fr-title {
-    font-family: 'TitleFont';
-    src: url('October Crow.ttf'); 
+    overflow: hidden;
 }
 
 #fr-story-display {
-    /* 3. Box Shape */
+    background-color: rgba(0, 0, 0, 0.85); 
+    color: white;
     width: 85%;
     max-width: 900px;
     padding: 30px;
-    
-    /* 4. Visuals */
-    font-family: 'StoryFont';
-    src: url('DeadlySins-Regular.ttf');
-    background-color: rgba(0, 0, 0, 0.85); 
-    color: white;
     text-align: center;
     border: 3px solid #27F5E4; 
     border-radius: 15px;
     box-shadow: 0 0 20px #27F5E4;
-
-    /* 5. The Nudge: This moves it lower while STAYING centered */
-    transform: translateY(60px); 
     
-    /* Remove any manual 'margin' properties if you have them! */
-    margin: 0; 
+    /* This moves it down while staying centered */
+    transform: translateY(60px); 
 }
