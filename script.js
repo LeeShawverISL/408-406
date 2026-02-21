@@ -5,7 +5,7 @@ const storyBox = document.getElementById('fr-story-display');
 
 // 2. Add the "Click" instruction
 startBtn.addEventListener('click', function() {
-    document.body.style.backgroundImage = "url('whiteboard_FR.jpg')";
+    document.body.style.backgroundImage = "url('whiteboard-FR.jpg')";
     music.play();
     
     // Optional: Lower the volume so it's not too loud (0.0 to 1.0)
