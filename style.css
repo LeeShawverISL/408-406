@@ -84,6 +84,13 @@ body {
     color: white;
     border-radius: 5px;
     font-family: 'Handwriting', cursive; /* Optional: makes it feel like they are writing on the board */
+    box-shadow: 0 0 15px rgba(39, 245, 228, 0.3); /* Soft Cyan glow */
+    outline: none; /* Removes the ugly default browser border when clicking */
+}
+
+#user-input:focus {
+    box-shadow: 0 0 20px rgba(39, 245, 228, 0.6); /* Brighter glow when typing */
+    border-color: white;
 }
 
 #submit-btn {
