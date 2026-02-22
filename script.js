@@ -42,8 +42,9 @@ const correctTranslation = [
     "inability to learn from history causes repeated events"
 ];
 
+let incorrectCount = 0;
+
 submitBtn.addEventListener('click', function () {
-    let incorrectCount = 0;
     let rawInput = userInput.value;
     const playerGuess = rawInput
         .toLowerCase()             // Make it all lowercase
