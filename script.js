@@ -23,7 +23,7 @@ const submitBtn = document.getElementById('submit-btn');
 const userInput = document.getElementById('user-input');
 
 // The answer you are looking for
-const correctTranslation = [
+const validAnswers = [
     "the inability to learn from history leads to the repetition of incidents",
     "failure to learn from history leads to the repetition of incidents",
     "failure to learn from history results in the repetition of incidents",
@@ -54,7 +54,7 @@ submitBtn.addEventListener('click', function () {
 
     console.log("Cleaned input for checking:", playerGuess);
 
-    if (playerGuess === correctTranslation) {
+if (correctTranslation.includes(playerGuess)) {
         console.log("Access Granted!");
         alert("Correct! The door clicks open...");
         // Here you would trigger the next scene/background
