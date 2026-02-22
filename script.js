@@ -6,7 +6,7 @@ const storyBox = document.getElementById('fr-story-display');
 // 2. Add the "Click" instruction
 startBtn.addEventListener('click', function() {
     // 1. Change Background & Music
-    document.body.style.backgroundImage = "url('whiteboard_FR.jpg')";
+    document.body.style.backgroundImage = "url('whiteboard-FR.jpg')";
     music.play();
 
     // 2. Hide the Intro

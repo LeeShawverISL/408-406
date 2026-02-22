@@ -58,11 +58,21 @@ body {
 
 #puzzle-container {
     position: fixed;
-    bottom: 50px; /* Distance from the bottom */
-    width: 100%;
+    bottom: 50px;
+    
+    /* 1. Force it to span the full width of the viewport */
+    left: 0;
+    right: 0;
+    width: 100vw; 
+
+    /* 2. Use Flexbox to center the content inside that 100vw */
     display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    gap: 15px;
+    
+    /* 3. Ensure nothing else is bumping it */
+    margin: 0;
 }
 
 #user-input {
