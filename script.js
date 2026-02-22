@@ -18,3 +18,7 @@ startBtn.addEventListener('click', function() {
     // Pro-tip: Automatically put the cursor in the box
     document.getElementById('user-input').focus();
 });
+
+submit-button.addEventListener('click', function() 
+
+});
