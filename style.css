@@ -99,6 +99,7 @@ body {
     border: none;
     cursor: pointer;
     font-weight: bold;
+    border-radius: 8px; /* Use a small number for subtle curves */
 }
 
 /* A helper class to hide/show things */
