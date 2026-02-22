@@ -5,14 +5,16 @@ const storyBox = document.getElementById('fr-story-display');
 
 // 2. Add the "Click" instruction
 startBtn.addEventListener('click', function() {
-    document.body.style.backgroundImage = "url('whiteboard-FR.jpg')";
+    // 1. Change Background & Music
+    document.body.style.backgroundImage = "url('whiteboard_FR.jpg')";
     music.play();
-    
-    // Optional: Lower the volume so it's not too loud (0.0 to 1.0)
-    music.volume = 0.4;
 
-    // Transition to the next part of your game
-    storyBox.style.display = 'none'; 
-    document.getElementById('fr-puzzle-area').classList.remove('hidden');
-    console.log("Music started and story hidden!");
+    // 2. Hide the Intro
+    document.getElementById('fr-story-display').style.display = 'none';
+
+    // 3. Show the Input Box
+    document.getElementById('puzzle-container').classList.remove('hidden');
+    
+    // Pro-tip: Automatically put the cursor in the box
+    document.getElementById('user-input').focus();
 });

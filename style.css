@@ -55,3 +55,36 @@ body {
     left: 0; 
     right: 0;
 }
+
+#puzzle-container {
+    position: fixed;
+    bottom: 50px; /* Distance from the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#user-input {
+    width: 400px;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid #27F5E4; /* Your brand cyan */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+    font-family: 'Handwriting', cursive; /* Optional: makes it feel like they are writing on the board */
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    background-color: #27F5E4;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* A helper class to hide/show things */
+.hidden {
+    display: none !important;
+}
