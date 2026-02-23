@@ -54,7 +54,7 @@ submitBtn.addEventListener('click', function () {
 
     console.log("Cleaned input for checking:", playerGuess);
 
-if (correctTranslation.includes(playerGuess)) {
+if (validAnswers.includes(playerGuess)) {
         console.log("Access Granted!");
         alert("Correct! The door clicks open...");
         // Here you would trigger the next scene/background
