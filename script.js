@@ -57,7 +57,7 @@ submitBtn.addEventListener('click', function () {
 
 if (validAnswers.includes(playerGuess)) {
         console.log("Translation Accepted");
-
+        document.body.style.setProperty('--bg-speed', '3.0s');
         // 1. Swap the background image
         document.body.style.backgroundImage = "url('victory_lab.jpg')";
 
@@ -66,7 +66,6 @@ if (validAnswers.includes(playerGuess)) {
 
         // 3. Optional: Add a success message directly on the screen
         console.log("Scene switched to Victory");
-    }
     } else {
         // INCORRECT LOGIC
         incorrectCount++; // Add 1 to the counter
