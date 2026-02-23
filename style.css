@@ -147,12 +147,12 @@ body {
 }
 
 #victory-1 {
-    background-image: url('victory_lab_1.jpg');
+    background-image: url('victory1.jpg');
     z-index: 99; /* Higher than the body (0) */
 }
 
 #victory-2 {
-    background-image: url('victory_lab_2.jpg');
+    background-image: url('victory2.jpg');
     z-index: 100; /* Higher than victory-1 (99) */
 }
 
