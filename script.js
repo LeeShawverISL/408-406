@@ -55,10 +55,18 @@ submitBtn.addEventListener('click', function () {
 
     console.log("Cleaned input for checking:", playerGuess);
 
-    if (validAnswers.includes(playerGuess)) {
-        console.log("Access Granted!");
-        alert("Correct! The door clicks open...");
-        // Here you would trigger the next scene/background
+if (validAnswers.includes(playerGuess)) {
+        console.log("Translation Accepted");
+
+        // 1. Swap the background image
+        document.body.style.backgroundImage = "url('victory_lab.jpg')";
+
+        // 2. Hide the puzzle UI so they can see the new scene
+        document.getElementById('puzzle-container').classList.add('hidden');
+
+        // 3. Optional: Add a success message directly on the screen
+        console.log("Scene switched to Victory");
+    }
     } else {
         // INCORRECT LOGIC
         incorrectCount++; // Add 1 to the counter
