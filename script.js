@@ -54,8 +54,8 @@ submitBtn.addEventListener('click', function () {
         .trim();                 // Removes spaces at the start/end
 
     console.log("Cleaned input for checking:", playerGuess);
-    
-if (validAnswers.includes(playerGuess)) {
+
+    if (validAnswers.includes(playerGuess)) {
         console.log("✅ MATCH FOUND: Starting victory sequence...");
 
         // 1. Hide the puzzle box
@@ -88,9 +88,18 @@ if (validAnswers.includes(playerGuess)) {
             } else {
                 console.error("❌ ERROR: Could not find 'victory-2'");
             }
+
+            // --- NEW: SHOW THE BUTTON ---
+            const nextBtn = document.getElementById('next-room-btn');
+            nextBtn.classList.remove('hidden');
+
+            // Optional: Link it to your next HTML page
+            nextBtn.onclick = function () {
+                window.location.href = "https://www.google.com"; // Replace with your actual destination
+            };
             console.log("🏁 Final scene sequence complete.");
         }, 3000);
-} else {
+    } else {
         // --- THIS PART WAS MISSING ---
         incorrectCount++;
         console.log("❌ Incorrect attempts:", incorrectCount);

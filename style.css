@@ -164,3 +164,26 @@ body {
     content: url('whiteboard_FR.jpg') url('victory_lab_1.jpg') url('victory_lab_2.jpg');
     display: none !important;
 }
+
+#next-room-btn {
+    position: fixed;
+    bottom: 10%;           /* Places it near the bottom of the screen */
+    left: 50%;
+    transform: translateX(-50%); /* Centers it perfectly */
+    padding: 15px 30px;
+    font-family: 'October_Crow', sans-serif; /* Using your cool custom font */
+    font-size: 1.5rem;
+    background-color: #27F5E4;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1000;         /* Ensures it's above everything else */
+    box-shadow: 0 0 15px rgba(39, 245, 228, 0.5);
+    transition: opacity 1s ease-in;
+}
+
+#next-room-btn:hover {
+    background-color: white;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+}
