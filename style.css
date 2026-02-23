@@ -158,11 +158,6 @@ body {
 
 /* A helper class to hide/show things */
 .hidden {
+    content: url('whiteboard_FR.jpg') url('victory_lab_1.jpg') url('victory_lab_2.jpg');
     display: none !important;
-}
-
-/* Preload images so the fade is instant */
-body::after {
-    content: url('whiteboard-FR.jpg') url('victory_lab_1.jpg') url('victory_lab_2.jpg');
-    display: none;
 }
