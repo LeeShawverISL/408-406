@@ -1,15 +1,15 @@
 @font-face {
-    font-family: 'October_Crow';      
-    src: url('October_Crow.ttf') format('truetype'); 
+    font-family: 'October_Crow';
+    src: url('October_Crow.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'DeadlySins';      
-    src: url('DeadlySins.ttf') format('truetype'); 
+    font-family: 'DeadlySins';
+    src: url('DeadlySins.ttf') format('truetype');
 }
 
 #fr-title {
-    font-family: 'October_Crow', sans-serif; 
+    font-family: 'October_Crow', sans-serif;
     font-size: 2rem;
     color: #27F5E4;
 }
@@ -20,64 +20,70 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    flex-direction: column; 
-    align-items: center;    /* Horizontal Center */
-    justify-content: center; /* Vertical Center */
-    
-    background-image: url('classroom_start.jpg'); 
+    flex-direction: column;
+    align-items: center;
+    /* Horizontal Center */
+    justify-content: center;
+    /* Vertical Center */
+
+    background-image: url('classroom_start.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-color: black;
     overflow: hidden;
-    transition: background-image 0.5s ease-in-out; /* Optional: smooths the swap */
+    transition: background-image 0.5s ease-in-out;
+    /* Optional: smooths the swap */
 }
 
 #fr-story-display {
-    font-family: 'DeadlySins', sans-serif; 
-    font-size: 1.5rem;    
-    background-color: rgba(0, 0, 0, 0.85); 
+    font-family: 'DeadlySins', sans-serif;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.85);
     color: white;
     width: 85%;
     max-width: 900px;
     padding: 30px;
     text-align: center;
-    border: 3px solid #27F5E4; 
+    border: 3px solid #27F5E4;
     border-radius: 15px;
     box-shadow: 0 0 20px #27F5E4;
-    
+
     /* This moves it down while staying centered */
-    transform: translateY(60px); 
-    margin-left: auto;   /* Pushes from the left */
-    margin-right: auto;  /* Pushes from the right */
-    
+    transform: translateY(60px);
+    margin-left: auto;
+    /* Pushes from the left */
+    margin-right: auto;
+    /* Pushes from the right */
+
     /* Ensure no old properties are fighting this */
-    left: 0; 
+    left: 0;
     right: 0;
 }
 
 #puzzle-container {
     position: fixed;
     bottom: 50px;
-    
+
     /* 1. Force it to span the full width of the viewport */
     left: 0;
     right: 0;
-    width: 100vw; 
+    width: 100vw;
 
     /* 2. Use Flexbox to center the content inside that 100vw */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    
+
     /* 3. Ensure nothing else is bumping it */
     margin: 0;
 }
 
 #user-input {
     width: 500px;
-    height: 100px; /* Gives it the height needed for multiple lines */
+    height: 100px;
+    /* Gives it the height needed for multiple lines */
     padding: 15px;
     font-size: 1.1rem;
     border: 2px solid #27F5E4;
@@ -85,15 +91,18 @@ body {
     color: white;
     border-radius: 10px;
     font-family: 'Handwriting', cursive;
-    
+
     /* These three lines are key for textareas */
-    resize: none;         /* Prevents the user from dragging the corner to resize it */
-    white-space: pre-wrap; /* Ensures text wraps naturally */
+    resize: none;
+    /* Prevents the user from dragging the corner to resize it */
+    white-space: pre-wrap;
+    /* Ensures text wraps naturally */
     overflow-wrap: break-word;
 }
 
 #user-input:focus {
-    box-shadow: 0 0 20px rgba(39, 245, 228, 0.6); /* Brighter glow when typing */
+    box-shadow: 0 0 20px rgba(39, 245, 228, 0.6);
+    /* Brighter glow when typing */
     border-color: white;
 }
 
@@ -103,10 +112,12 @@ body {
     border: none;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 8px; /* Use a small number for subtle curves */
+    border-radius: 8px;
+    /* Use a small number for subtle curves */
 }
 
 /* A helper class to hide/show things */
 .hidden {
+    content: url('whiteboard_FR.jpg') url('victory_lab.jpg');
     display: none !important;
 }
