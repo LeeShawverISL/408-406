@@ -57,14 +57,20 @@ submitBtn.addEventListener('click', function () {
 
     if (validAnswers.includes(playerGuess)) {
         console.log("Translation Accepted");
-        // Hide the puzzle UI
+
+        // 1. IMPORTANT: Hide the puzzle box immediately
         document.getElementById('puzzle-container').classList.add('hidden');
 
-        // Trigger the crossfade by making the victory layer opaque
-        const victoryLayer = document.getElementById('victory-layer');
-        victoryLayer.style.opacity = "1";
+        // 2. Start the FIRST transition (Scene 2)
+        const scene2 = document.getElementById('scene-2');
+        scene2.style.opacity = "1";
 
-        console.log("Crossfade initiated.");
+        // 3. Wait 3000ms (3 seconds) and then start the SECOND transition
+        setTimeout(function () {
+            const scene3 = document.getElementById('scene-3');
+            scene3.style.opacity = "1";
+            console.log("Final scene reached.");
+        }, 3000);
     } else {
         // INCORRECT LOGIC
         incorrectCount++; // Add 1 to the counter
