@@ -136,13 +136,16 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    /* Use 'cover' to ensure it hides the body completely */
-    background-size: cover; 
+    
+    /* This makes it behave like your 'classroom_start.jpg' */
+    background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
+    background-color: black; /* Fills any "letterbox" gaps with black */
+    
     opacity: 0;
     transition: opacity 3.0s ease-in-out;
-    z-index: 99; 
+    z-index: 99;
     pointer-events: none;
 }
 
