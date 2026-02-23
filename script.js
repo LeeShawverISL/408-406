@@ -62,12 +62,12 @@ submitBtn.addEventListener('click', function () {
         document.getElementById('puzzle-container').classList.add('hidden');
 
         // 2. Start the FIRST transition (Scene 2)
-        const scene2 = document.getElementById('vistory-1');
+        const scene2 = document.getElementById('victory-1');
         scene2.style.opacity = "1";
 
         // 3. Wait 3000ms (3 seconds) and then start the SECOND transition
         setTimeout(function () {
-            const scene3 = document.getElementById('vistory-2');
+            const scene3 = document.getElementById('victory-2');
             scene3.style.opacity = "1";
             console.log("Final scene reached.");
         }, 3000);
