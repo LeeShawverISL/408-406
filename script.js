@@ -90,12 +90,10 @@ if (validAnswers.includes(playerGuess)) {
             }
             console.log("🏁 Final scene sequence complete.");
         }, 3000);
-
-    } else {
-        // INCORRECT LOGIC
+} else {
+        // --- THIS PART WAS MISSING ---
         incorrectCount++;
-        console.log("❌ MATCH FAILED. Player typed:", playerGuess);
-        console.log("Incorrect attempts count:", incorrectCount);
+        console.log("❌ Incorrect attempts:", incorrectCount);
 
         if (incorrectCount === 5) {
             alert("Try opening a new browser tab and using Google Translate.");
@@ -105,3 +103,4 @@ if (validAnswers.includes(playerGuess)) {
         userInput.placeholder = "Translation rejected. Try again.";
         userInput.value = "";
     }
+}); // This closing bracket and semicolon are crucial!
