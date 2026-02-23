@@ -55,17 +55,16 @@ submitBtn.addEventListener('click', function () {
 
     console.log("Cleaned input for checking:", playerGuess);
 
-if (validAnswers.includes(playerGuess)) {
+    if (validAnswers.includes(playerGuess)) {
         console.log("Translation Accepted");
-        document.body.style.setProperty('--bg-speed', '3.0s');
-        // 1. Swap the background image
-        document.body.style.backgroundImage = "url('victory_lab.jpg')";
-
-        // 2. Hide the puzzle UI so they can see the new scene
+        // Hide the puzzle UI
         document.getElementById('puzzle-container').classList.add('hidden');
 
-        // 3. Optional: Add a success message directly on the screen
-        console.log("Scene switched to Victory");
+        // Trigger the crossfade by making the victory layer opaque
+        const victoryLayer = document.getElementById('victory-layer');
+        victoryLayer.style.opacity = "1";
+
+        console.log("Crossfade initiated.");
     } else {
         // INCORRECT LOGIC
         incorrectCount++; // Add 1 to the counter

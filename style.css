@@ -36,6 +36,20 @@ body {
     transition: background-image var(--bg-speed) ease-in-out;
 }
 
+#victory-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('victory_lab.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Sits behind your text/buttons but above the body */
+    opacity: 0;  /* Start invisible */
+    transition: opacity 3.0s ease-in-out; /* The slow crossfade */
+}
+
 #fr-story-display {
     font-family: 'DeadlySins', sans-serif;
     font-size: 1.5rem;
