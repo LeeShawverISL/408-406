@@ -96,7 +96,7 @@ body {
 
 #user-input {
     width: 500px;
-    height: 100px;
+    height: 70px;
     /* Gives it the height needed for multiple lines */
     padding: 15px;
     font-size: 1.1rem;
