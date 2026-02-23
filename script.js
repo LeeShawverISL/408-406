@@ -54,36 +54,54 @@ submitBtn.addEventListener('click', function () {
         .trim();                 // Removes spaces at the start/end
 
     console.log("Cleaned input for checking:", playerGuess);
+    
+if (validAnswers.includes(playerGuess)) {
+        console.log("✅ MATCH FOUND: Starting victory sequence...");
 
-    if (validAnswers.includes(playerGuess)) {
-        console.log("Translation Accepted");
+        // 1. Hide the puzzle box
+        const puzzleBox = document.getElementById('puzzle-container');
+        if (puzzleBox) {
+            puzzleBox.classList.add('hidden');
+            console.log("1. Puzzle container hidden.");
+        } else {
+            console.error("❌ ERROR: Could not find 'puzzle-container'");
+        }
 
-        // 1. IMPORTANT: Hide the puzzle box immediately
-        document.getElementById('puzzle-container').classList.add('hidden');
-
-        // 2. Start the FIRST transition (Scene 2)
+        // 2. Start the FIRST transition
         const scene2 = document.getElementById('victory-1');
-        scene2.style.opacity = "1";
+        if (scene2) {
+            console.log("2. victory-1 found. Current opacity:", getComputedStyle(scene2).opacity);
+            scene2.style.opacity = "1";
+            console.log("2. victory-1 opacity command sent. New opacity should be: 1");
+        } else {
+            console.error("❌ ERROR: Could not find 'victory-1'. Check your HTML IDs!");
+        }
 
-        // 3. Wait 3000ms (3 seconds) and then start the SECOND transition
+        // 3. Wait 3 seconds and start the SECOND transition
+        console.log("3. Timer started: Waiting 3000ms...");
         setTimeout(function () {
+            console.log("4. Timer finished! Triggering final scene...");
             const scene3 = document.getElementById('victory-2');
-            scene3.style.opacity = "1";
-            console.log("Final scene reached.");
+            if (scene3) {
+                scene3.style.opacity = "1";
+                console.log("4. victory-2 opacity set to 1.");
+            } else {
+                console.error("❌ ERROR: Could not find 'victory-2'");
+            }
+            console.log("🏁 Final scene sequence complete.");
         }, 3000);
+
     } else {
         // INCORRECT LOGIC
-        incorrectCount++; // Add 1 to the counter
-        console.log("Incorrect attempts:", incorrectCount);
+        incorrectCount++;
+        console.log("❌ MATCH FAILED. Player typed:", playerGuess);
+        console.log("Incorrect attempts count:", incorrectCount);
 
-        // Check if they've reached the limit
         if (incorrectCount === 5) {
             alert("Try opening a new browser tab and using Google Translate.");
         }
 
-        // Visual feedback
         userInput.style.border = "2px solid red";
         userInput.placeholder = "Translation rejected. Try again.";
         userInput.value = "";
     }
-});
