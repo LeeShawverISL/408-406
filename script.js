@@ -47,14 +47,15 @@ let incorrectCount = 0;
 submitBtn.addEventListener('click', function () {
     let rawInput = userInput.value;
     const playerGuess = rawInput
-        .toLowerCase()             // Make it all lowercase
-        .replace(/[^\w\s]|_/g, "") // REMOVES: . , ! ? : ; ( ) etc.
-        .replace(/\s+/g, " ")      // Shrinks double spaces to a single space
-        .trim();                   // Removes spaces at the start/end
+        .toLowerCase()
+        .replace(/\n/g, " ")       // Turns "Enter" presses into a space
+        .replace(/[^\w\s]|_/g, "")
+        .replace(/\s+/g, " ")
+        .trim();                 // Removes spaces at the start/end
 
     console.log("Cleaned input for checking:", playerGuess);
 
-if (validAnswers.includes(playerGuess)) {
+    if (validAnswers.includes(playerGuess)) {
         console.log("Access Granted!");
         alert("Correct! The door clicks open...");
         // Here you would trigger the next scene/background

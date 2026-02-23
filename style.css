@@ -76,16 +76,20 @@ body {
 }
 
 #user-input {
-    width: 400px;
+    width: 500px;
+    height: 100px; /* Gives it the height needed for multiple lines */
     padding: 15px;
-    font-size: 1.2rem;
-    border: 2px solid #27F5E4; /* Your brand cyan */
+    font-size: 1.1rem;
+    border: 2px solid #27F5E4;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    border-radius: 5px;
-    font-family: 'Handwriting', cursive; /* Optional: makes it feel like they are writing on the board */
-    box-shadow: 0 0 15px rgba(39, 245, 228, 0.3); /* Soft Cyan glow */
-    outline: none; /* Removes the ugly default browser border when clicking */
+    border-radius: 10px;
+    font-family: 'Handwriting', cursive;
+    
+    /* These three lines are key for textareas */
+    resize: none;         /* Prevents the user from dragging the corner to resize it */
+    white-space: pre-wrap; /* Ensures text wraps naturally */
+    overflow-wrap: break-word;
 }
 
 #user-input:focus {
