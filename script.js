@@ -25,6 +25,7 @@ const userInput = document.getElementById('user-input');
 // The answer you are looking for
 const validAnswers = [
     "the inability to learn from history leads to the repetition of incidents",
+    "The inability to learn from past lessons of history means the repetition of indicents",
     "failure to learn from history leads to the repetition of incidents",
     "failure to learn from history results in the repetition of incidents",
     "failure to learn from history causes the repetition of incidents",
