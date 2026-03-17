@@ -96,7 +96,7 @@ submitBtn.addEventListener('click', function () {
 
             // Optional: Link it to your next HTML page
             nextBtn.onclick = function () {
-                window.location.href = "https://www.google.com"; // Replace with your actual destination
+                window.location.href = "https://isladministrator.github.io/escape-room-puzzle-anton-and-adam/"; // Replace with your actual destination
             };
             console.log("🏁 Final scene sequence complete.");
         }, 3000);
