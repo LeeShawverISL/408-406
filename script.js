@@ -40,7 +40,17 @@ const validAnswers = [
     "the inability to learn from history leads to the repetition of events",
     "the inability to learn from history results in the repetition of events",
     "failure to learn from history leads to repeated events",
-    "inability to learn from history causes repeated events"
+    "inability to learn from history causes repeated events",
+    "The inability to learn from history leads to the repetition of incidents.",
+    "Failure to draw lessons from history results in the recurrence of incidents.",
+    "Those who cannot learn from history are doomed to repeat it.",
+    "The incapacity to draw lessons from history causes incidents to repeat.",
+    "History repeats itself when its lessons are ignored.",
+    "An inability to heed history's lessons entails a repetition of events.",
+    "Failing to learn the lessons of the past leads to repeating the same incidents.",
+    "The incapacity to pull lessons from history brings about the repetition of incidents.",
+    "Neglecting the lessons of history ensures that incidents will recur.",
+    "A failure to derive insight from history leads to the repetition of mistakes."
 ];
 
 let incorrectCount = 0;
