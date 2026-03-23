@@ -50,7 +50,8 @@ const validAnswers = [
     "Failing to learn the lessons of the past leads to repeating the same incidents.",
     "The incapacity to pull lessons from history brings about the repetition of incidents.",
     "Neglecting the lessons of history ensures that incidents will recur.",
-    "A failure to derive insight from history leads to the repetition of mistakes."
+    "A failure to derive insight from history leads to the repetition of mistakes.",
+    "The inability to draw the lessons of history causes the repetition of incidents."
 ];
 
 let incorrectCount = 0;
