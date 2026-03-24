@@ -188,3 +188,24 @@ body {
     color: rgb(255, 255, 255);
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
 }
+
+#translator-btn {
+    padding: 10px 20px;
+    background-color: #ffcc00; /* A different color so it stands out from "Check" */
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    font-family: sans-serif;
+    transition: transform 0.2s;
+}
+
+#translator-btn:hover {
+    background-color: #ffe066;
+    transform: scale(1.05);
+}
+
+#translator-link {
+    text-decoration: none; /* Removes the underline from the link */
+}
